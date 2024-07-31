@@ -1,5 +1,8 @@
 .App {
+  display: grid;
+  justify-content: center;
   text-align: center;
+  padding: 50px;
 }
 
 .App-logo {
@@ -35,4 +38,77 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.btn-search {
+  background-color: var(--button-color);
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 100px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.btn-reset {
+  background-color: slategray;
+  color: #fff;
+  border: none;
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.btn-search:hover {
+  background-color: #2980b9;
+}
+
+.btn-reset:hover {
+  background-color: #4a5d6b;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  width: 300px;
+  padding: 10px;
+  text-align: left;
+}
+
+.card li {
+  list-style: none;
+  /* border: 1px solid #61dafb; */
+  padding: 10px;
+  margin: 10px;
+}
+
+.card .title a {
+  color: #003366;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.search {
+  color: #333333;
+  width: 400px;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.result-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
